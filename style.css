@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 *{
     margin: 0px;
@@ -54,7 +53,7 @@
     text-align: center;
     font-size: 20px;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 10px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -65,7 +64,190 @@
     transform: scale(1.15);
 }
 
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px black solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
 
+.input i{
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(90deg, #589745, #8745, #1478);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Lora';
+    transform: translateY(-10%);
+    color: black;
+}
+
+.inputmsg {
+    min-width: 280px;
+    height: 100px;
+    border-radius: 22px;
+    border: 2px black solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.inputmsg i{
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(90deg, #589745, #8745, #1478);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputmsg textarea {
+    background: none;
+    border: 0;
+}
+.botao{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.botao button{
+    font-family: 'Lora';
+    background-color: rgba(17, 68, 119, 0.904);
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 22px;
+    outline: none;
+    cursor: pointer;
+}
+
+ .titulo {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
+}
+
+@keyframes iniciar{
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+    100%{
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
+}
+
+/* ESTILIZAÇÃO DA PÁGINA DE CADASTRO */
+
+.register{
+    padding: 15px;
+    width: 30%;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: #000000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #fb8500;
+}
+
+#data_de_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.botao-enviar{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.botao-enviar input{
+    background: none;
+    border: none;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+/* ESTILIZAÇÃO DA PÁGINA DE CONTATO */
 .form-talk{
     display: flex;
     align-items: center;
@@ -101,13 +283,16 @@
     border: 0;
 }
 
+
+/* RODAPÉ */
+
 .footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     line-height: 50px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .footer a{

@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0005c4fe6f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="container">
+    <section class="container">
+    <div class="titulo">
 
-    <form class="form-talk" action="" method="post">
+        <!-- INICIO DO FORMULÁRIO--> 
 
-        <label>Nome</label>
-        <input type="text" required/>
+        <form class="form" method="post" action="./email.php">
 
-        <label>Telefone</label>
-        <input type="text" required/>
+            <label for="nome">Nome</label>
+                <div class="input">
+                    <i class="fas fa-user-astronaut"></i>
+                    <input placeholder="Nome" type="text" name="nome" id="nome">
+                </div>
 
-        <label>E-mail</label>
-        <input type="email" required/>
+            <label for="telefone">Telefone</label>
+                <div class="input">
+                    <i class="fas fa-mobile-alt"></i>
+                    <input placeholder="(xx)xxxxx-xxxx" type="text" name="telefone" id="telefone">
+                </div>
 
 
-        <label>Mensagem</label>
-        <textarea rows="6" style="width: 20em">
-        </textarea>
-
-        <button class="send" type="submit">Enviar</button>
-        
-    </form>
-
-</div>
-
+            <label for="email">Mensagem</label>
+                <div class="inputmsg">
+                    <i class="fas fa-envelope"></i>
+                    <textarea></textarea>
+                </div>
+            
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <!-- FIM DO FORMULÁRIO-->
+    </div>
+</section>
 </body>
 </html>
